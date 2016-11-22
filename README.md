@@ -8,7 +8,7 @@ Note: This is sample script, done for specific need may be used and develop it m
 
 # Usaga:
 
-- npa.sh <nessus_policy.nessus>
+- npa.sh nessus_policy.nessus
 
 # Prerequisities:
 
