@@ -6,10 +6,10 @@ Script list the disabled families & the diabled plugins and there Severity (Risk
 
 Note: This is sample script, done for specific need may be used and develop it more maturity
 
-Usaga:
+# Usaga:
 
-npa.sh <nessus_policy.nessus>
+- npa.sh <nessus_policy.nessus>
 
-Prerequisities:
+# Prerequisities:
 
 - install xmlstarlet package
