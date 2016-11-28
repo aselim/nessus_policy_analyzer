@@ -47,7 +47,7 @@ echo
 
 #listing the mixed plugins family
 echo "This is the partial enabled plugins"	
-echo "PluginID,Severity (based on CVSS),Family,Filename,Vulnerability">mix.csv
+echo "PluginID,Severity (based on CVSS),Family,Filename,Vulnerability">$file.csv
 for (( i=1; i<=$C; i++ )) ; do 
 	#concatenting the FamilyName against the Status... filtering the XML/Nessus first by FamilyItem
 	M=`xmlstarlet sel  -t -c "//FamilyItem[$i]" $file | xmlstarlet sel -t -m "//FamilyName"   -v . -o '| '; xmlstarlet sel  -t -c "//FamilyItem[$i]" $file | xmlstarlet sel -t -v '//Status' -n;`
